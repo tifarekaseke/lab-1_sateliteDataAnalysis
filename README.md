@@ -1,1 +1,1 @@
-# learn_linux_by_doing
+# Use this part to share how each member contributed. 
