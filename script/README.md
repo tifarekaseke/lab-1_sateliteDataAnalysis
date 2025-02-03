@@ -34,5 +34,5 @@ chmod a+x bonus_task.sh
 
 End task 2
 
-Collaborators: Bode Murairi <b.murairi@alustudent.com>, Faith Irakoze <f.irakoze2@alustudent.com>, Pascal Nsigo <p.nsigo@alustudent.com>, Maurice Nshimyumukiza <m.nshimyumu@alustudent.com>, Tifare Kaseke <t.kaseke@alustudent.com>
+Contributors: Bode Murairi <b.murairi@alustudent.com>, Faith Irakoze <f.irakoze2@alustudent.com>, Pascal Nsigo <p.nsigo@alustudent.com>, Maurice Nshimyumukiza <m.nshimyumu@alustudent.com>, Tifare Kaseke <t.kaseke@alustudent.com>
  
