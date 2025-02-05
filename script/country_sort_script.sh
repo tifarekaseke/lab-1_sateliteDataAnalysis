@@ -1,17 +1,20 @@
 #!/bin/bash
 
-# This script extracts and sorts satellite data for South Africa, retaining the header.
+# This script extracts the top 10 countries with the highest temperature from satellite data
+# and ensures that the headers are displayed correctly.
 
 # Define file paths
-south_africa_data="../analyzed_data/humidity_data_south_africa.csv"
-satelite_location="../raw_data/satelite_temperature_data.csv"
+output_file="../analyzed_data/highest_temp.csv"
+satellite_data="../raw_data/satelite_temperature_data.csv"
 
-# Extract the header
-header=$(head -n 1 "$satelite_location")
+# Extract the header from the satellite data
+header=$(head -n 1 "$satellite_data")
 
-# Extract South Africa data and sort by column 4 in descending order
-awk -F, 'NR==1 || $1 == "South Africa"' "$satelite_location" | sort -t, -k4 -nr > "$south_africa_data"
+# Extract the top 10 highest temperature rows (excluding the header), then add the header back
+{
+    echo "$header"  # Print the header first
+    tail -n +2 "$satellite_data" | sort -t, -k3 -nr | head -n 10  # Sort by column 3 (Temperature) and take the top 10
+} > "$output_file"
 
-# Ensure the header remains at the top
-sed -i "1s/.*/$header/" "$south_africa_data"
-
+# Display the result
+cat "$output_file"
