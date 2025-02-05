@@ -1,25 +1,33 @@
 #!/bin/bash
 
-# Relative file path for satelite_location
+# This script extracts and sorts satellite data for South Africa, retaining the header.
 
+# Define file paths
+summary_results_path="../analyzed_data/summary_results.csv"
 satelite_location="../raw_data/satelite_temperature_data.csv"
 
-# Relative file path for summary_result
-file_location="../analyzed_data/summary_result.csv"
+# Extract the header
+header=$(head -n 1 "$satelite_location")
 
-echo "Top 10 temperatures" > $file_location
+awk -F, 'NR==1 || $1 == "South Africa"' "$satelite_location" | sort -t, -k4 -nr > "$south_africa_data"
 
-echo "
-" >> $file_location
-# Extract the top 10 highest temperature and save the result inside summary_result
-
-cut -d, -f3 $satelite_location | sort -nr | head -n 10 >> $file_location
+sed -i "1s/.*/$header/" "$south_africa_data"
 
 echo "________________________________________________________________________________________________" >> $file_location
 
 # Extract South Africa data and sort based on highest humidity
 
-echo "South Africa data" >> $file_location
-echo " " >> $file_location
-awk -F, '$1 == "South Africa" {print}' $satelite_location | sort -t, -k4 -nr >> $file_location
+output_file="../analyzed_data/summary_results.csv"
+satellite_data="../raw_data/satelite_temperature_data.csv"
 
+# Extract the header from the satellite data
+header=$(head -n 1 "$satellite_data")
+
+# Extract the top 10 highest temperature rows (excluding the header), then add the header back
+{
+    echo "$header"  # Print the header first
+    tail -n +2 "$satellite_data" | sort -t, -k3 -nr | head -n 10  # Sort by column 3 (Temperature) and take the top 10
+} > "$output_file"
+
+# Display the result
+cat "$output_file"
