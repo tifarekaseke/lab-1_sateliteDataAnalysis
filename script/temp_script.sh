@@ -17,4 +17,4 @@ header=$(head -n 1 "$satellite_data")
 } > "$output_file"
 
 # Display the result
-cat "$output_file
+cat "$output_file"

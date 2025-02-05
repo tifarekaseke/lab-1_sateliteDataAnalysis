@@ -13,4 +13,4 @@ header=$(head -n 1 "$satelite_location")
 awk -F, 'NR==1 ||$1 == "South Africa"' "$satelite_location" | sort -t, -k4 -nr > "$south_africa_data"
 
 # Ensure the header remains at the top
-sed -i "1s/.*/$header/" "$south_africa_data"i
+sed -i "1s/.*/$header/" "$south_africa_data"
