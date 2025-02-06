@@ -14,14 +14,17 @@ Task 2:  Analyze the data with the use of Linux skills
 
 Script 1: 
 
-- Combining cut, sort, and head with pipe to extract, sort, and select the 10 highest temperature values. Then, redirect the result to the file analyzed_data/highest_temp.csv
+- Include the header as the first line/row of highest_temp.csv
+Combining tail, sort, and head with pipe to extract, sort, and select the 10 highest temperature values. Then, redirect the result to the file analyzed_data/highest_temp.csv
 
 - Make the script executable for the owner, group users, and others: chmod a+x temp_script.sh
 
 Script 2:
 
 - Select a country: South Africa
+- Extract the header from the satellite data
 - Combining awk and sort to extract South Africa data (select rows), and sort from the highest to the lowest values of humidity. 
+- Ensure that the heading remained at the top of the file
 - Save the output into analyzed_data/humidity_data_south_africa.csv
 - Make the script executable for the owner, group users, everyone else with:
 chmod a+x country_sort_script.sh
@@ -31,7 +34,6 @@ Script 3:
 - Combines contents of script 1 and script 2, and redirect the output into a file analyzed_data/summary_result.csv
 - Make the script executable for owner, group users, and everyone else: 
 chmod a+x bonus_task.sh
-
 End task 2
 
 Contributors: Bode Murairi <b.murairi@alustudent.com>, Faith Irakoze <f.irakoze2@alustudent.com>, Pascal Nsigo <p.nsigo@alustudent.com>, Maurice Nshimyumukiza <m.nshimyumu@alustudent.com>, Tifare Kaseke <t.kaseke@alustudent.com>

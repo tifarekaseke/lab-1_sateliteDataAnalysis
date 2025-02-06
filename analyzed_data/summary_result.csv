@@ -1,19 +1,21 @@
-Top 10 temperatures
+Top 10 countries with the highest temperature data
+
+Country,Month,Temperature,Humidity
+Guinea,July,49.99,45.68
+Guinea,July,49.99,45.68
+Mauritania,August,49.98,25.16
+Mauritania,August,49.98,25.16
+Eritrea,July,49.98,19.38
+Namibia,June,49.97,81.33
+Mauritius,May,49.97,77.18
+Liberia,May,49.97,79.11
+Gambia,July,49.97,26.4
+Gambia,July,49.97,26.4
 
 
-49.99
-49.99
-49.98
-49.98
-49.98
-49.97
-49.97
-49.97
-49.97
-49.97
-________________________________________________________________________________________________
-South Africa data
- 
+South Africa Data sorted by Highest to Lowest Humidity
+
+Country,Month,Temperature,Humidity
 South Africa,August,21.84,89.17
 South Africa,July,41.72,88.07
 South Africa,June,28.52,85.81
