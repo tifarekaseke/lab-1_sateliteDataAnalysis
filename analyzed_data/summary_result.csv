@@ -16,6 +16,9 @@ Gambia,July,49.97,26.4
 South Africa Data sorted by Highest to Lowest Humidity
 
 Country,Month,Temperature,Humidity
+
+
+________________________________________________________________________________________________
 South Africa,August,21.84,89.17
 South Africa,July,41.72,88.07
 South Africa,June,28.52,85.81
@@ -138,3 +141,4 @@ South Africa,August,36.06,12.06
 South Africa,August,34.69,11.59
 South Africa,August,34.69,11.59
 South Africa,August,24.98,10.57
+Country,Month,Temperature,Humidity

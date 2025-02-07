@@ -1,7 +1,8 @@
-Steps by steps resolutions breakdown
+Steps by steps resolutions breakdown 
 
 Task 1:  Clean the repository after cloning it to your sandbox
 
+- Forking the project
 - Adding Collaborators
 - Cloning the repository to the sandbox: git clone https://github.com/tifarekaseke/lab-1_sateliteDataAnalysis.git
 - Removing lab-1_sateliteDataAnalysis/dummy,lab-1_sateliteDataAnalysis/raw_data/dummy-2, and lab-1_sateliteDataAnalysis/rename_directory/dummy-3.txt using rm command
