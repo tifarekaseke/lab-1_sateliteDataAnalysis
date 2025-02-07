@@ -1,8 +1,7 @@
-Steps by steps resolutions breakdown 
+Steps by steps resolutions breakdown
 
 Task 1:  Clean the repository after cloning it to your sandbox
 
-- Forking the project
 - Adding Collaborators
 - Cloning the repository to the sandbox: git clone https://github.com/tifarekaseke/lab-1_sateliteDataAnalysis.git
 - Removing lab-1_sateliteDataAnalysis/dummy,lab-1_sateliteDataAnalysis/raw_data/dummy-2, and lab-1_sateliteDataAnalysis/rename_directory/dummy-3.txt using rm command
@@ -13,7 +12,7 @@ End Task 1
 
 Task 2:  Analyze the data with the use of Linux skills
 
-Script 1: 
+Script 1:
 
 - Include the header as the first line/row of highest_temp.csv
 Combining tail, sort, and head with pipe to extract, sort, and select the 10 highest temperature values. Then, redirect the result to the file analyzed_data/highest_temp.csv
@@ -24,7 +23,7 @@ Script 2:
 
 - Select a country: South Africa
 - Extract the header from the satellite data
-- Combining awk and sort to extract South Africa data (select rows), and sort from the highest to the lowest values of humidity. 
+- Combining awk and sort to extract South Africa data (select rows), and sort from the highest to the lowest values of humidity.
 - Ensure that the heading remained at the top of the file
 - Save the output into analyzed_data/humidity_data_south_africa.csv
 - Make the script executable for the owner, group users, everyone else with:
@@ -33,9 +32,9 @@ chmod a+x country_sort_script.sh
 Script 3:
  
 - Combines contents of script 1 and script 2, and redirect the output into a file analyzed_data/summary_result.csv
-- Make the script executable for owner, group users, and everyone else: 
+- Make the script executable for owner, group users, and everyone else:
 chmod a+x bonus_task.sh
 End task 2
 
 Contributors: Bode Murairi <b.murairi@alustudent.com>, Faith Irakoze <f.irakoze2@alustudent.com>, Pascal Nsigo <p.nsigo@alustudent.com>, Maurice Nshimyumukiza <m.nshimyumu@alustudent.com>, Tifare Kaseke <t.kaseke@alustudent.com>
- 
+
