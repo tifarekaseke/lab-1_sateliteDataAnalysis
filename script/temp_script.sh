@@ -12,7 +12,7 @@ header=$(head -n 1 "$satellite_data")
 
 # Extract the top 10 highest temperature rows (excluding the header), then add the header back
 echo "$header" > "$output_file"
-tail -n +2 "$satellite_data" | sort -t, -k3 -nr | head -n 10  >> "$output_file"
+tail -n +2 "$satellite_data" | sort -t, -k3 -nr |uniq -u| head -n 10  >> "$output_file"
 
 # Task completion message
 echo "Top 10 countries with the highest temperature data extracted and saved to '$output_file'."
