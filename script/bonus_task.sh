@@ -20,6 +20,7 @@ tail -n +2 "$satellite_data" | sort -t, -k3 -nr |uniq -u| head -n 10 >> "$output
 # Skip lines for better readability
 echo "" >> "$output_file"
 echo "" >> "$output_file"
+echo "_______________________________________________________________________________________________" >> "$output_file"
 
 # Ensure the header remains at the top
 echo "$header" >> "$output_file"
